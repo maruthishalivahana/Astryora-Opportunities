@@ -1,6 +1,5 @@
 'use client'
 
-import React from 'react'
 import Header from '@/components/landingComponents/header'
 import HeroSection from '@/components/landingComponents/heroSection'
 import AboutAstryora from '@/components/landingComponents/aboutAstryora'

@@ -2,6 +2,7 @@
 
 const HeroSection = () => {
     return (
+
         <section className="relative min-h-screen flex items-center bg-slate-950 overflow-hidden">
 
             {/* Background Orbs */}
