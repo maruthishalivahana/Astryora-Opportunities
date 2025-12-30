@@ -1,14 +1,15 @@
-
 'use client'
 
 import React from 'react'
+import Link from 'next/link'
 
-const header = () => {
-    return (
-        <div>
-            header
-        </div>
-    )
+const Header = () => {
+  return (
+    
+      <div>
+    header
+    </div>
+  )
 }
 
-export default header
+export default Header
