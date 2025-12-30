@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import Page from '../app/landing/page'
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -60,6 +60,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+      {/* <Page /> */}
     </div>
   );
 }
