@@ -1,26 +1,27 @@
 "use client";
 
+
+const pillars = [
+    {
+        id: 1,
+        title: "Skill-Proven Talent",
+        desc: "Show your real abilities through completed missions. Your work becomes your strongest proof.",
+        features: ["Build real projects", "Verified achievements", "Skills over credentials"],
+    },
+    {
+        id: 2,
+        title: "Real Startup Missions",
+        desc: "Work on real-world challenges faced by startups today and earn for solving meaningful problems.",
+        features: ["Live projects", "Direct collaboration", "Immediate impact"],
+    },
+    {
+        id: 3,
+        title: "Trust by Performance",
+        desc: "Build a strong reputation through consistent, high-quality output that opens new opportunities.",
+        features: ["Performance metrics", "Public track record", "Community recognition"],
+    },
+];
 const HowItWorks = () => {
-    const pillars = [
-        {
-            id: 1,
-            title: "Skill-Proven Talent",
-            desc: "Show your real abilities through completed missions. Your work becomes your strongest proof.",
-            features: ["Build real projects", "Verified achievements", "Skills over credentials"],
-        },
-        {
-            id: 2,
-            title: "Real Startup Missions",
-            desc: "Work on real-world challenges faced by startups today and earn for solving meaningful problems.",
-            features: ["Live projects", "Direct collaboration", "Immediate impact"],
-        },
-        {
-            id: 3,
-            title: "Trust by Performance",
-            desc: "Build a strong reputation through consistent, high-quality output that opens new opportunities.",
-            features: ["Performance metrics", "Public track record", "Community recognition"],
-        },
-    ];
 
     return (
         <section className="py-20 bg-slate-50">
