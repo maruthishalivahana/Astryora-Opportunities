@@ -23,66 +23,83 @@ const pillars = [
 ];
 const HowItWorks = () => {
 
-    return (
-        <section className="py-20 bg-slate-50">
-            <div className="max-w-7xl mx-auto px-6">
+const steps = [
+  {
+    step: '01',
+    title: 'Join Astryora',
+    description:
+      'Create a single account and set up a global profile. No roles, no labels — just one identity on the platform.',
+  },
+  {
+    step: '02',
+    title: 'Build Reputation',
+    description:
+      'Earn ASI by completing real work or proving skills through platform mechanisms. Reputation grows through action.',
+  },
+  {
+    step: '03',
+    title: 'Missions Happen',
+    description:
+      'Missions are posted, applications happen, and work is executed — all within the same unified flow.',
+  },
+  {
+    step: '04',
+    title: 'Trust Grows',
+    description:
+      'Outcomes and feedback strengthen ASI for individuals and APM for businesses. Trust is built by performance.',
+  },
+]
 
-                {/* Header */}
-                <div className="text-center mb-16">
-                    <span className="text-xs font-semibold tracking-wider uppercase text-slate-600 bg-slate-200 px-3 py-1 rounded-full">
-                        How It Works
-                    </span>
+const HowItWorks = () => {
+  return (
+    <section className="w-full bg-white py-20 px-6">
+      <div className="max-w-7xl mx-auto">
+        
+        {/* Section Header */}
+        <div className="text-center mb-16">
+          <h2 className="text-4xl font-bold text-gray-900">
+            How Astryora Works
+          </h2>
+          <p className="mt-4 text-lg text-gray-600">
+            A role-neutral journey where trust is built through action, not titles.
+          </p>
+        </div>
 
-                    <h2 className="text-4xl md:text-5xl font-serif font-semibold text-slate-900 mt-6">
-                        Three Pillars of Our Platform
-                    </h2>
+        {/* Steps */}
+        <div className="flex flex-col md:flex-row items-center justify-between gap-10">
+          {steps.map((item, index) => (
+            <div
+              key={index}
+              className="relative flex flex-col items-center text-center bg-gray-50 rounded-2xl p-8 shadow-sm hover:shadow-md transition w-full md:w-1/4"
+            >
+              {/* Step Number */}
+              <div className="w-14 h-14 flex items-center justify-center rounded-full bg-black text-white text-lg font-semibold mb-6">
+                {item.step}
+              </div>
 
-                    <p className="text-lg text-slate-600 max-w-2xl mx-auto mt-4">
-                        We rebuilt how talent connects with opportunity. No gatekeepers—just real work and real results.
-                    </p>
-                </div>
+              {/* Title */}
+              <h3 className="text-xl font-semibold text-gray-900 mb-3">
+                {item.title}
+              </h3>
 
-                {/* Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {pillars.map((item) => (
-                        <div key={item.id} className="bg-white p-8 rounded-2xl border border-slate-200">
-
-                            {/* Icon Placeholder */}
-                            <div className="w-14 h-14 rounded-xl bg-slate-100 mb-6 flex items-center justify-center">
-                                <span className="text-xl font-bold text-slate-600">{item.id}</span>
-                            </div>
-
-                            <h3 className="text-2xl font-serif font-semibold text-slate-900 mb-4">
-                                {item.title}
-                            </h3>
-
-                            <p className="text-slate-600 mb-6">{item.desc}</p>
-
-                            <ul className="space-y-2">
-                                {item.features.map((f, i) => (
-                                    <li key={i} className="flex items-center gap-2 text-slate-700">
-                                        <span className="w-2 h-2 bg-blue-500 rounded-full" />
-                                        {f}
-                                    </li>
-                                ))}
-                            </ul>
-                        </div>
-                    ))}
-                </div>
-
-                {/* CTA */}
-                <div className="mt-20 text-center bg-slate-900 text-white p-12 rounded-3xl">
-                    <h3 className="text-3xl md:text-4xl font-serif font-semibold mb-6">
-                        Ready to prove your skills?
-                    </h3>
-
-                    <button className="px-8 py-4 bg-white text-slate-900 rounded-xl font-semibold text-lg">
-                        Get Started
-                    </button>
-                </div>
-
+              {/* Description */}
+              <p className="text-gray-600 text-sm leading-relaxed">
+                {item.description}
+              </p>
             </div>
-        </section>
-    );
+          ))}
+        </div>
+
+        {/* Footer Note */}
+        <div className="text-center mt-14">
+          <p className="text-sm text-gray-500">
+            No role labels are shown at any stage of the journey.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  )
 }
-export default HowItWorks;
+
+export default HowItWorks

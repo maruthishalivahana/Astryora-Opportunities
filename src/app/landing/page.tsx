@@ -8,7 +8,7 @@ import HowItWorks from '@/components/landingComponents/howItWorks'
 const page = () => {
     return (
         <div>
-            <Header />
+            <Header/>
             <HeroSection />
             <AboutAstryora />
             <HowItWorks />
