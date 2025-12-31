@@ -6,7 +6,6 @@ import Header from '@/components/landingComponents/header'
 import AboutAstryora from '@/components/landingComponents/aboutAstryora'
 import HeroSection from '@/components/landingComponents/heroSection'
 
-
 const page = () => {
     return (
         <div>

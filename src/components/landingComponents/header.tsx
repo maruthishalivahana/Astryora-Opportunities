@@ -97,7 +97,7 @@ export default function Header() {
                 </Button>
                 <Button
                   className="w-full bg-blue-600 hover:bg-blue-700 justify-center"
-                  
+
                 >
                   <Link href="/signup" onClick={() => setIsOpen(false)}>
                     Get Started
