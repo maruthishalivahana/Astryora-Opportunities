@@ -1,3 +1,4 @@
+import Footer from "@/components/landingComponents/Footer";
 import "./global.css";
 import Header from "@/components/landingComponents/header";
 import type { Metadata } from "next";
@@ -17,6 +18,7 @@ export default function RootLayout({
       <body className="antialiased bg-white text-gray-900">
         <Header />
         <main>{children}</main>
+        <Footer />
       </body>
     </html>
   );
