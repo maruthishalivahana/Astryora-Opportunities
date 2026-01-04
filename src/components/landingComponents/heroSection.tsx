@@ -18,7 +18,7 @@ const HeroSection = () => {
                     </span>
                 </div>
 
-                {/* Headline */}
+
                 <div className="font-serif leading-tight mb-6">
                     <h1 className="text-5xl sm:text-6xl text-white">Not Jobs.</h1>
                     <h1 className="text-5xl sm:text-6xl text-white">Not Internships.</h1>
@@ -65,3 +65,4 @@ const HeroSection = () => {
     );
 }
 export default HeroSection;
+
