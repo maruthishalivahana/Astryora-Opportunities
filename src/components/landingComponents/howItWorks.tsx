@@ -1,5 +1,31 @@
 "use client";
 
+const steps = [
+  {
+    step: '01',
+    title: 'Join Astryora',
+    description:
+      'Create a single account and set up a global profile. No roles, no labels — just one identity on the platform.',
+  },
+  {
+    step: '02',
+    title: 'Build Reputation',
+    description:
+      'Earn ASI by completing real work or proving skills through platform mechanisms. Reputation grows through action.',
+  },
+  {
+    step: '03',
+    title: 'Missions Happen',
+    description:
+      'Missions are posted, applications happen, and work is executed — all within the same unified flow.',
+  },
+  {
+    step: '04',
+    title: 'Trust Grows',
+    description:
+      'Outcomes and feedback strengthen ASI for individuals and APM for businesses. Trust is built by performance.',
+  },
+]
 
 // const pillars = [
 //     {
