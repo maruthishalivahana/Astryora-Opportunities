@@ -1,17 +1,17 @@
 'use client'
 
-import HowItWorks from '@/components/landingComponents/howItWorks'
-import AboutAstryora from '@/components/landingComponents/aboutAstryora'
 import HeroSection from '@/components/landingComponents/heroSection'
+import AboutAstryora from '@/components/landingComponents/aboutAstryora'
+import HowItWorks from '@/components/landingComponents/howItWorks'
 import FeaturePreview from '@/components/landingComponents/FeaturePreview'
 import WhyAstryoraIsDifferent from '@/components/landingComponents/WhyAstryoraIsDifferent'
 import TrustSafety from '@/components/landingComponents/TrustSafety'
 import WhoThisPlatformIsFor from '@/components/landingComponents/WhoThisPlatformIsFor'
 import Conversion from '@/components/landingComponents/Conversion'
 
-const Page = () => {
+export default function Page() {
   return (
-    <div>
+    <main>
       <HeroSection />
       <AboutAstryora />
       <HowItWorks />
@@ -20,8 +20,6 @@ const Page = () => {
       <TrustSafety />
       <WhoThisPlatformIsFor />
       <Conversion />
-    </div>
+    </main>
   )
 }
-
-export default Page
