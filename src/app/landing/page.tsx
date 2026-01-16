@@ -1,10 +1,9 @@
 'use client'
 
 import React from 'react'
-
+import HowItWorks from '@/components/landingComponents/HowItWorks'
 import Header from '@/components/landingComponents/header'
 import AboutAstryora from '@/components/landingComponents/aboutAstryora'
-import HowItWorks from '@/components/landingComponents/howItWorks'
 import TrustAndAudience from '@/components/landingComponents/TrustAndAudience'
 import HeroSection from '@/components/landingComponents/heroSection'
 import FeaturePreview from '@/components/landingComponents/FeaturePreview'
@@ -19,7 +18,7 @@ const page = () => {
             <AboutAstryora />
             <HowItWorks />
             <TrustAndAudience />
-
+            <TrustAndAudience />
             <FeaturePreview />
             <WhyAstryoraIsDifferent />
             <WhoThisPlatformIsFor />
